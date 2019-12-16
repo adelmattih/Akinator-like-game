@@ -1,0 +1,5 @@
+vivant;un sportif;un politique;un scientifique;une femme
+oui;oui;non;non;non;Zinedine Zidane
+non;non;non;oui;oui;Marie Curie
+non;non;non;oui;non;Pasteur
+oui;non;non;non;non;Goldmann
