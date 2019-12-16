@@ -1,4 +1,3 @@
-
 # -*- coding: utf-8 -*-
 """
 Created on Sun May 12 14:29:30 2019
@@ -104,7 +103,7 @@ class Ensemble:
            with open(chemin, 'r') as fichier:
                #on stocke chaque mot de la première ligne dans liste_attributs
                self.liste_attributs = \
-                               fichier.readline().lower().strip().split(' ')
+                               fichier.readline().lower().strip().split(';')
                #ensuite on stocke la liste d'exemples dans liste_exemples
                self.liste_exemples = self.liste_en_exemples(
                                        fichier.read().strip().lower().split('\n'),
@@ -127,7 +126,7 @@ class Ensemble:
        ret = list()
        for ligne in exemples:
            #on stocke chaque mot de la ligne dans une liste attributs
-           attributs = ligne.lower().strip().split(' ')
+           attributs = ligne.lower().strip().split(';')
            #met l'étiquette par défaut si elle n'est pas dans la ligne
            etiquette = attributs[-1] if len(attributs) != len(noms_attributs) \
                                      else ""
