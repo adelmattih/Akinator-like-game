@@ -76,7 +76,7 @@ def questionnaire():
 @app.route('/logout')
 def logout():
     # réinitialiser la session
-    #Cette fonction a un petit problème il faudrait pouvoir R1, mais nous n'arrivons pas à le faire
+    #Cette fonction a un petit problème il faudrait pouvoir rénitialiser R1, mais nous n'arrivons pas à le faire
 
     session.pop('username', None)
     session.clear()
