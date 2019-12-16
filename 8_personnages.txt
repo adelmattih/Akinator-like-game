@@ -1,0 +1,9 @@
+vivant un_sportif un_politique un_scientifique une_femme
+oui oui non non non Zinedine_Zidane
+non non non oui oui Marie_Curie
+non non non oui non Pasteur
+oui non non non non Goldmann
+oui non oui non non Emmanuel_Macron
+oui oui non non oui Laure_Manaudou
+non non non non oui Rosa_Parks
+non non oui non non Jean_Jaures
