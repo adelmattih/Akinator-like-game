@@ -1,15 +1,14 @@
-# -*- coding: utf-8 -*-
-"""
-Created on Sun May 12 18:26:18 2019
 
-@author: paul
-"""
 
 # -*- coding: utf-8 -*-
 """
 Created on Sun May 12 14:29:30 2019
 
 @author: paul
+Ce code réalise un tout petit Akinator à partir de la base de donné qui correspond au fichier text 8personnages,
+après essai sur les 8 personnages le programme arrive bien a devinner à qui on pense.
+Il faudra par la suite pouvoir exécuter ce code sur une base de donnée plus importante.
+
 """
 
 from math import log
