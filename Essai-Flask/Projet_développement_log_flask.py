@@ -9,11 +9,6 @@ app = Flask(__name__)
 app.secret_key = os.urandom(24)
 app.no_of_chance = 4
 
-file_csv = "./projet_dev_log_flask.csv"
-
-# Avoir les infos sur les pokemons et les technologies big data
-
-
 
 ######### On définit le nombre de questions du questionnaire
 
@@ -38,15 +33,6 @@ for x in range(1, longueur_questionnaire + 1) :
     item = liste_choice[x-1]
     questions[str(x)] = {"question" : "Votre personnage est : {} ?".format(item), "options" :["oui", "non"]}
 
-
-# Ici on vérifie si le fichier qui conserve les réponses existe ou pas
-
-if not os.path.isfile(file_csv):
-    df = pd.DataFrame({'user' : [], 'score' : []})
-    #for question in questions.keys() :
-    for x in range(1, longueur_questionnaire+ 1 ) : 
-        df[str(x)] = []
-    df.to_csv(file_csv, index = False)
 
 
 #### La page d'accueil #####
@@ -114,9 +100,6 @@ def logout():
     session.pop('username', None)
     session.clear()
     return redirect(url_for('home'))    
-
-
-
 
 
 if __name__ == '__main__':
